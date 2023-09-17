@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<Head> 
+    <link rel="stylesheet" href="Stile.css" type="text/css">
+
+    <div id="Window"> 
+        <ul id="oggettoInterattivo">
+            <li> <font color="white">  <h5><button id="Close" value=”Nascondi” onclick="javascript:nascondi()"><img src="Close.jpg" alt=""width="18px"></button> </h5></font></li>
+                            
+                                <br>
+                                <br>
+                               <p> <strong> LOGIN NOW </strong></p> 
+                               <br>
+                                <form action="/loginpage" method="post">
+                                <ul>
+                                    <li><p> Username:  <input type="text" placeholder="Username" required > </p></li>
+                                    <li><p>Password: <input type="password" placeholder="Password" required ></p></li>
+                                    <li> <p> <button> login </button> </p> </li>
+                                    <br>
+                                    <br>
+                                </ul>
+                                </form>
+
+
+                        
+                        
+                        <br>
+                        <p> <strong> ...OR SIGN UP </strong></p> 
+                        <br>
+                        <form>
+                            <div>
+                                 <p> Name:</p>  
+                                 <p> <input type="text" id="Nome" placeholder="Name" required>  </p>
+                                 <p>Surname: </p> 
+                                <p> <input type="text" id="Cognome" placeholder="Cognome" required></p>
+                                </div>
+                                <div> <p>E-Mail: </p> 
+                                    <p><label for="email"><input id="email" type="email"placeholder="email" required></label></div> </p>
+                                <br>
+                                <ul>
+                                    <li><p> New Password:    <input type="password" pattern=".{8,12}" required title="scrivi da 8 a 12 caratteri" id="password" placeholder="New Password" required></label></p></li>
+                                    <li><p>Rep. Password:  <input type="password" id="nuova password" placeholder="Repeat Password" required></label></p></li>
+                                    <br>
+                                </ul>
+                                
+                            
+
+                        <br>
+                        <p id="DATA"> Date of Birth:  
+                            <select id="Giorno" required> 
+                                <option value="" disabled selected> DAY </option>
+                                <option value=""> 1 </option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+
+                            <select name="Mese" required >  
+                                <option value="" disabled selected> MONTH </option>
+                                <option value=""> January </option>
+                                <option value=""> February </option>
+                                <option value=""> March</option>
+                                <option value=""> April</option>
+                            </select>
+
+                            <select required> 
+                                <option value="" disabled selected> YEAR </option>
+                                <option value=""> 1990 </option>
+                                <option value="">2000</option>
+                                <option value="">2010</option>
+                            </select> </p>
+                            <br>
+                            
+                       
+
+                        <br>
+                        <p> Gender: </p>
+
+                        <form>
+                            <ul>
+                                <li> <i>
+                                    <p>Male:
+                                    <input name="Gender" id="Maschio" type="radio"> 
+                                
+                                    Female:
+                                    <input name="Gender" id="Femmina" type="radio">
+                                
+                                    Undefined: 
+                                    <input name="Gender" id="Non specificato" type="radio"> 
+                                </li> </i> </p>
+                            </ul>  
+                        </form>
+
+                    </form>
+                    <br>
+
+                    <p> <input type="checkbox" required> <i> I  agree to the Terms and Conditions </i></p>
+
+                   
+                    <div>
+                       <font color="Grey"><label for="">------------------------</label> </font> 
+                    </div>
+
+                    <p><button> <strong>SUBSCRIBE</strong>  </button> </p>
+                </form>
+            </ul> 
+        </div> 
+
+    <script>
+       function mostra() {
+           document.getElementById("oggettoInterattivo").style.display="block";
+           document.getElementById("Window").style.display="block";
+           }
+ 
+       function nascondi() {
+           document.getElementById("oggettoInterattivo").style.display="none";
+           document.getElementById("Window").style.display="none";
+           }
+   </script>
+    <LINK REL="ICON" href="icon.ico" >
+    <title>
+        Contact | Millennium Plaza  
+    </title>
+    <style>
+        body { 
+            background-image: url(Matrix.jpg);   
+            background-repeat: no-repeat; 
+            background-color: black;
+            background-attachment: fixed;
+            
+            
+            
+        }
+
+        #navbar0 .container {
+            position: relative;
+        }
+
+        #navbar0 .container  ul li a:hover {
+            color: #4de208 ;
+         } 
+
+         #navbar1 .container { 
+             position: static;
+         }
+
+         #Window {
+            background-color:rgba(129, 129, 129, 0.92);
+            width: 949px;
+            height: 1180px;
+            position:absolute;
+            cursor:initial;
+            display: flex;
+            margin-left: 125px;
+            margin-top: 100px;
+            border: 1px solid #000;}
+
+         #Window ul h5{
+            background-color: #242424;
+    
+   }
+
+   @media (max-width: 559px){
+
+    #Window {
+        
+        width: 340px;
+        cursor:pointer;
+        display: flex;
+        margin-left: 125px;
+        margin-top: 130px;
+        
+      } 
+    }
+    </style>
+</Head>
+<body>
+    <header>
+        <nav id="navbar0"> 
+            <div class="container">
+                <a href="index.html"><img src="Logo.png" alt="" id="Logo"></a>
+
+                <form action="/loginpage" method="post">
+                    <label id="SearchBar"><input type="text" placeholder="Search" required > <button id="SearchBarButton"> <a href=""><img src="Button.png" alt="" align="left" height=30px></a> </button></label>
+                     
+                    </form>
+
+                <a href=""><img src="" alt="" align="left" height=80px></a>
+                <ul> 
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="AboutUs.html"> About </a></li>
+                    <li><a class="current" href="Contacts.html"> Contact </a></li>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <header>
+        <nav id="navbar1"> 
+            <div class="container">
+                <ul> <font color= "white">
+                    <li align="center"><a href="Contacts.html"> <img src="Games.gif" alt="" width="88%" id="Symbol"></a><a href="Contacts.html"> <font color= #48E300> Reset </font></a></li>
+                </font>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <header id="store">
+    <div class="container">
+
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+        <div class="item" id="item-1">
+            <img src="">
+            <p><i></i> <br> <strong></strong> <br><img src="" width="33%"> </p>
+        </div>
+
+    </div>
+    </header>   
+
+    
+
+
+    
+</body>
+</html>
+
+
+
+
+
+

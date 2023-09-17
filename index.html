@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<Head> 
+    <link rel="stylesheet" href="Stile.css" type="text/css">
+    
+    <div  id="Window" > 
+        <ul id="oggettoInterattivo">
+            <li> <font color="white">  <h5><button id="Close" value=”Nascondi” onclick="javascript:nascondi()"><img src="Close.jpg" alt=""width="18px"></button> </h5></font></li>
+            <li><h2> Welcome back to <font color="blue"> <strong> 2000s </strong></font> </h2> </li> 
+            <li><p> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.</p> </li>
+            <li> <p><img src="wall.jpg" height="165px" width="260px"> </p> </li>  
+            <li><p><button id="Start"> <a href="Games.html"><img src="Start.jpg" alt=""  height=30px> </p></li>
+        </ul> 
+    </div> 
+
+    <script src="Script.js"></script>
+    <LINK REL="ICON" href="icon.ico" >
+    <title>
+        Home | Millennium Plaza  
+    </title>
+    <style>
+        body {
+            background-image: url("Desktop.jpg");  
+            background-repeat: no-repeat; 
+            background-color: rgb( 16, 47, 32);
+            background-attachment: fixed;
+            
+        }
+
+        #navbar0 .container {
+            position: relative;
+        }
+
+
+        #navbar0 .container  ul li a:hover {
+            color: rgb(192, 122, 200) ;
+         } 
+
+
+        #navbar1 .container { 
+             position: static;
+         }
+
+         
+
+         @media (max-width: 559px){ 
+            #Logo {
+                margin-right: 525px;
+                width: 50%;
+                
+            
+            }
+
+            
+         }
+
+
+    </style>
+</Head>
+<body>
+    <header>
+        <nav id="navbar0"> 
+            <div class="container">
+                <a href="index.html"><img src="Logo.png" alt="" id="Logo"></a>
+
+                <form action="/loginpage" method="post">
+                    <label id="SearchBar"><input type="text" placeholder="Search" required > <button id="SearchBarButton"> <a href=""><img src="Button.png" alt="" align="left" height=30px></a> </button></label>
+                     
+                    </form>
+
+                <a href=""><img src="" alt="" align="left" height=80px></a>
+                <ul> 
+                    <li><a class="current" href="index.html"> Home </a></li>
+                    <li><a href="AboutUs.html"> About </a></li>
+                    <li><a href="Contacts.html"> Contact </a></li>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <header>
+        <nav id="navbar1"> 
+            <div class="container">
+                <ul> <font color= "white">
+                    <li align="center"><a href="Music.html"> <img src="Music.gif" alt="" width="86%" id="Symbol"></a><a href="Music.html"> <font color="white">  Music </font></a></li>
+                    <li align="center"><a href="Games.html"> <img src="Games.gif" alt="" width="88%" id="Symbol"></a><a href="Games.html"> <font color="white"> Games </font></a></li> 
+                    <li align="center"><a href="Movies.html"> <img src="Movies.png" alt="" width="90%" id="Symbol"></a><a href="Movies.html"> <font color="white"> Movies </font></a></li> 
+                    <li align="center"><a href="Mix.html"> <img src="Clothes.gif" alt="" width="89%" id="Symbol"></a><a href="Mix.html"> <font color="white"> Mix </font></a></li> 
+                </font>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <header>
+        <nav id="end0"> 
+            <div class="container">
+                <ul>
+                    <li><button id="StartButton"> <a href="Music.html"> <img src="Start.jpg" height="26px" width= "75px"></a> </button></li>
+                    <li><button onclick="javascript:mostra()"id="LowButton"> <strong> Welcome </strong> </button>  </li>
+                </ul>
+                <p><font color="DarkGrey">  <strong> 2021 </strong> © All rights reserved.</p> </font>
+            </div>
+        </nav>
+    </header>
+    
+</body>
+</html>
